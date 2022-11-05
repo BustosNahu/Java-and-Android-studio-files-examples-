@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Magic Id Application</string>
+    <string name="hint_id">Please enter id number</string>
+    <string name="submit">submit</string>
+    <string name="dateofbirth">Dia de nacimiento</string>
+    <string name="genero">\"Genero \"</string>
+    <string name="nacionalidad">\"Nacionalidad \"</string>
+    <string name="nuevalinea">/n</string>
+
+</resources>

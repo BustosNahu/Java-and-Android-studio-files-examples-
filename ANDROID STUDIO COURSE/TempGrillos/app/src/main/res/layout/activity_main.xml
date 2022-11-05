@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#D7CCC8">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sol_grande"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/tx_temperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C°"
+            android:layout_gravity="center"
+            android:textSize="90sp"
+            android:textColor="#212121"
+            />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="¿Sabias que podemos determinar la temperatura en el ambiente con la ayuda de loa grillos? Solo tenes que contar la cantidad de chirridos del grillo por 25 segundos"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#212121"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="Escribe la cantidad aqui debajo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#212121"
+            />
+
+        <TextView
+            android:id="@+id/tx_advertencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Ingrese un valor correcto"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:textColor="#757575"
+            />
+
+        <EditText
+            android:id="@+id/editT_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="Chirridos"
+            android:textSize="20sp"
+            android:textColor="#757575"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#795548"
+            android:text="Calcula la temperatura"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

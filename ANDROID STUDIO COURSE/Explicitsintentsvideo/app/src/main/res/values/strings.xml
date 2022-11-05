@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Explicits intents video</string>
+    <string name="welcome_to_activity_2">Welcome to activity 2</string>
+    <string name="please_enter_your_surname">Please enter your surname</string>
+    <string name="button">Button</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="activity_2">Activity 2</string>
+    <string name="activity_3">Activity 3</string>
+    <string name="data_from_act3_will_be_display_here">Data from act3 will be display here</string>
+</resources>
