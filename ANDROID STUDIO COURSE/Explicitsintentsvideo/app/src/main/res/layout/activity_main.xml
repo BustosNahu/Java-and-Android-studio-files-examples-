@@ -38,7 +38,7 @@
         android:id="@+id/tvResults"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/data_from_act3_will_be_display_here"
+        android:hint="@string/data_from_act3_will_be_display_here"
         android:layout_marginTop="20dp"
         android:gravity="center"/>
 </LinearLayout>

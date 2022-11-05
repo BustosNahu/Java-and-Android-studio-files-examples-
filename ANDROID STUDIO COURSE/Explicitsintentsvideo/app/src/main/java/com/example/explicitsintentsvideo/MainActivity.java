@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = etName.getText().toString().trim();
                 Intent intent = new Intent(MainActivity.this,com.example.explicitsintentsvideo.Activity2.class);
                 //INTENT.PUTEXTRA se usa para guardar la info en la otra activity, el primer dato es el nombre que le vamos a pon
-                intent.putExtra("data", name);
+                intent.putExtra("nameData", name);
                 startActivity(intent);
             }
 
@@ -66,5 +66,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == ACTIVITY3)
+        {
+            if (requestCode == RESULT_OK)
+            {
+                tvResults.setText(data.getStringExtra("surnameData"));
+            }
+            if (resultCode == RESULT_CANCELED)
+            {
+                tvResults.setText("No data recived!");
+            }
+        }
     }
 }

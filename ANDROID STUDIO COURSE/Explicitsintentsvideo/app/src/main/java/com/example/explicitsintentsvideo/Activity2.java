@@ -17,7 +17,7 @@ public class Activity2 extends AppCompatActivity {
 
         tvWelcome = findViewById(R.id.tvWelcome);
 
-        String name = getIntent().getStringExtra("data");
+        String name = getIntent().getStringExtra("nameData");
 
         tvWelcome.setText(name + ", welcome to activity 2!" );
 
