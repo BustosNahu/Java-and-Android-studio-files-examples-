@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, com.example.explicitsintentsvideo.Activity3.class);
                 startActivityForResult(intent, ACTIVITY3);
 
+
             }
         });
     }
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == ACTIVITY3)
         {
-            if (requestCode == RESULT_OK)
+            if (resultCode == RESULT_OK)
             {
                 tvResults.setText(data.getStringExtra("surnameData"));
             }
